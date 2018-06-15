@@ -91,7 +91,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.0/socket.io.js"></script>
     <script>
         // Websocket connection
-        const socket = io.connect("//185.13.90.140:8081");
+        const socket = io.connect("http://185.13.90.140:8081");
         // Listening to message event.
         socket.on("message", ({ user, message }) => {
             const list = document.getElementById("messageContainer");
